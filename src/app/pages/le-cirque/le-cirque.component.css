@@ -1,0 +1,24 @@
+app-navbar {
+  z-index: 10;
+  position: fixed;
+  width: 100vw;
+}
+#le-cirque-body {
+  height: 100vh;
+  background-color: red;
+}
+
+#le-cirque {
+  position: relative;
+  top: 10vh;
+}
+
+#le-cirque h2 {
+  text-align: center;
+  font-size: 5em;
+}
+
+#le-cirque-detail{
+  text-align: center;
+  margin-top: 10vh; 
+}
