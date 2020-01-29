@@ -1,3 +1,4 @@
+import { VariablesGlobales } from './variableGlobales';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LeCirqueComponent } from './pages/le-cirque/le-cirque.component';
 import { ShowsComponent } from './pages/shows/shows.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,14 @@ import { ProfileComponent } from './pages/profile/profile.component';
     NavbarComponent,
     LeCirqueComponent,
     ShowsComponent,
-    ProfileComponent
+    ProfileComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [VariablesGlobales],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

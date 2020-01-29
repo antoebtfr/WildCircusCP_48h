@@ -1,0 +1,10 @@
+<nav id="menu-burger" [ngClass]="varGlo.getSidebarStatus() ? 'isOpen' : '' ">
+    <div id="login">
+        <i class="material-icons"> face </i>
+        <h2> Login </h2>
+    </div>
+    <form>
+
+    </form>
+</nav>
+<div id="div-to-close" [ngClass]="varGlo.getSidebarStatus() ? 'isOpen' : '' " (click)="varGlo.closeSide()"></div>
