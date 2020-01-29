@@ -62,5 +62,9 @@ export class LoadingComponent implements OnInit {
       flashCSS.animation = 'fadeOut linear 5s 2s forwards';
       homeCSS.display = 'block';
     }, timeBeforeFlash + 2000);
+
+    setTimeout(() => {
+      flashCSS.display = 'none';
+    }, timeBeforeFlash + 7000);
   }
 }

@@ -12,4 +12,15 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  public clickTitle() {
+    const flashCSS = document.getElementById('flash-home').style;
+
+    flashCSS.zIndex = '10';
+    flashCSS.opacity = '1';
+    flashCSS.transform = 'scale(4)';
+
+    setTimeout(() => {
+      flashCSS.animation = 'fadeOut linear 5s 2s forwards';
+    });
+  }
 }

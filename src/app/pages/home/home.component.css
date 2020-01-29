@@ -12,7 +12,12 @@
   align-items: center;
   z-index: 3;
   position: fixed;
-  text-shadow: 10px 10px 50px black; 
+  text-shadow: 10px 10px 50px black;
+  transition: 0.7s;
+}
+
+#title:hover {
+  font-size: 25px;
 }
 
 #title h1 {
@@ -36,7 +41,7 @@
   height: 70vh;
   position: fixed;
   top: -35vh;
-  z-index: 3; 
+  z-index: 3;
 }
 
 #left-curtain {
@@ -54,4 +59,40 @@
   background-position: center;
   background-size: cover;
   filter: blur(10px);
+}
+
+#title span#click-moi {
+  font-size: 44px;
+  position: fixed;
+  bottom: 3vh;
+  opacity: 0;
+}
+
+#title:hover span#click-moi {
+  animation: blink 3s linear infinite;
+}
+
+#flash-home {
+  height: 80vh;
+  width: 80vw;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: white 10px 10px 10px, -10px -10px 10px;
+  position: fixed;
+  opacity: 0;
+  transition: 2s;
+}
+
+/* keyframes */
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+  }
 }
