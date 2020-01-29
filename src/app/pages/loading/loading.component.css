@@ -55,8 +55,13 @@
   position: fixed;
   opacity: 0;
   transition: 2s;
+  z-index: 5;
 }
 
+app-home {
+  transition: 2s;
+  display: none;
+}
 /* Keyframes */
 
 @keyframes spin {
@@ -78,7 +83,7 @@
 }
 
 @keyframes fadeOut {
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
