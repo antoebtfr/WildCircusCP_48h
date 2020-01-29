@@ -1,0 +1,15 @@
+nav {
+  background-color: black;
+  height: 4vh;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  cursor: pointer;
+}

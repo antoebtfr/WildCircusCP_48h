@@ -58,7 +58,7 @@
   z-index: 5;
 }
 
-app-home {
+app-welcome {
   transition: 2s;
   display: none;
 }

@@ -48,7 +48,7 @@ export class LoadingComponent implements OnInit {
   public triangleClick() {
     const triangleCSS = document.getElementById('triangle-code').style;
     const flashCSS = document.getElementById('flash').style;
-    const homeCSS = document.getElementById('home').style;
+    const welcomeCSS = document.getElementById('welcome').style;
     const timeBeforeFlash = 1500;
 
     triangleCSS.animation = 'leave linear 1.5s forwards';
@@ -60,7 +60,7 @@ export class LoadingComponent implements OnInit {
 
     setTimeout(() => {
       flashCSS.animation = 'fadeOut linear 5s 2s forwards';
-      homeCSS.display = 'block';
+      welcomeCSS.display = 'block';
     }, timeBeforeFlash + 2000);
 
     setTimeout(() => {
