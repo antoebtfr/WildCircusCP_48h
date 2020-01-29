@@ -1,0 +1,66 @@
+#body {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: none;
+}
+
+#count {
+  font-size: 5em;
+  transition: 0.8s;
+}
+
+#cursor {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: 0.1;
+}
+
+#triangle-code {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  border-right: 43px solid transparent;
+  border-bottom: 150px solid red;
+  border-left: 43px solid transparent;
+  position: fixed;
+  bottom: -30px;
+  transition: 1s;
+
+}
+
+#triangle-code:hover ~ #cursor {
+  width: 18vh;
+  height: 18vh;
+  border: dashed 6px white;
+  background-color: transparent;
+  animation: spin 5s linear infinite;
+}
+
+/* Keyframes */
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes leave {
+    35%{
+        transform: translateY(-30px);
+    } 100% {
+        transform: translateY(100%);
+    }
+}
