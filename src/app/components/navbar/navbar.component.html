@@ -1,6 +1,7 @@
 <nav>
     <ul>
-        <li *ngFor="let navlink of navLinks" class="navlink" [routerLink]="navlink.link"> 
+        <li *ngFor="let navlink of navLinks" class="navlink" [routerLink]="navlink.link"
+        [style.background-color]="navlink.background"> 
             {{navlink.name}} 
         </li>
     </ul>

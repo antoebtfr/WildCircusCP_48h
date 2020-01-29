@@ -1,4 +1,4 @@
-import { Link } from './../../shared/class/link';
+import { Navlink } from './../../shared/class/link';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  public navLinks: Link[] = [
-    {name: 'Accueil', link: '.'},
-    {name: 'Shows', link: '.'},
-    {name: 'Profil', link: '.'},
-    {name: 'Le Cirque', link: '.'}
+  public navLinks: Navlink[] = [
+    {name: 'Accueil', link: '../homepage'},
+    {name: 'Shows', link: '../shows', background: 'grey'},
+    {name: 'Profil', link: '../profil', background: 'blue'},
+    {name: 'Le Cirque', link: '../le-cirque', background: 'yellow'}
   ];
   constructor() { }
 

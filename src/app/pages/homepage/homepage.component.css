@@ -1,4 +1,26 @@
-#body{
-    height: 100vh;
-    background-color: red;
+#body {
+  height: 100vh;
+  background-image: url(https://i.pinimg.com/564x/64/d0/53/64d053c4575e8e23fa4bc098f54423dd.jpg);
+  background-position: 20% 10%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+app-navbar {
+  position: fixed;
+  width: 100vw;
+  height: 2vh;
+  z-index: 10;
+}
+
+#presentation{
+  height: 98vh;
+  position: relative;
+  top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  text-align: center;
 }

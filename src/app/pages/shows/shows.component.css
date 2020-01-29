@@ -1,0 +1,28 @@
+app-navbar {
+  z-index: 10;
+  position: fixed;
+  width: 100vw;
+}
+
+#shows-body {
+  height: 100vh;
+  background-color: red;
+  overflow: auto ;
+}
+
+.shows-container {
+  width: 100vw;
+  background-color: grey;
+  margin-top: 10vh;
+}
+
+.shows-container h2 {
+  text-align: center;
+  font-size: 2.3em;
+}
+
+.shows-list {
+  background-color: blue;
+  width: 100%;
+  height: 60vh;  
+}

@@ -1,0 +1,72 @@
+app-navbar {
+  z-index: 10;
+  position: fixed;
+  width: 100vw;
+}
+
+#profil-body {
+  height: 100vh;
+  background-color: red;
+}
+
+#profil-background {
+  width: 100vw;
+  height: 30vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+}
+
+#profil-avatar {
+  background-color: yellow;
+  height: 175%;
+  width: 22.5%;
+  border: solid white 5px;
+  position: relative;
+  top: 10vh;
+  left: 5vw;
+}
+
+#profil-name {
+  position: fixed;
+  font-size: 2.5em;
+  left: 30vw;
+  top: 23vh;
+}
+
+#profil-btn-edit {
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+  border: solid white 2px;
+  position: fixed;
+  right: 2vw;
+  top: 20vh;
+  height: 7vh;
+  width: 20vw;
+  font-size: 1.4em;
+}
+
+#profil-show {
+  background-color: blue;
+  height: 60vh;
+  width: 65vw;
+  position: fixed;
+  left: 30vw;
+  top: 35vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#profil-show h2 {
+  font-size: 2.6em;
+  letter-spacing: 0.7em;
+}
+#myShows {
+  background-color: green;
+  width: 95%;
+  height: 80%;
+  overflow: auto;
+}

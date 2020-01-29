@@ -1,4 +1,4 @@
-export class Link {
+export class Navlink {
     name: string;
     link: string;
     background?: string;

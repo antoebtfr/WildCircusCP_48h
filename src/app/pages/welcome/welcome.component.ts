@@ -14,13 +14,23 @@ export class WelcomeComponent implements OnInit {
 
   public clickTitle() {
     const flashCSS = document.getElementById('flash-home').style;
+    const welcomeCSS = document.getElementById('welcome-body').style;
+    const homepageCSS = document.getElementById('homepage').style;
+
+    const flashDelay = 5; // Delai du flash de la page Welcome
 
     flashCSS.zIndex = '10';
     flashCSS.opacity = '1';
     flashCSS.transform = 'scale(4)';
+    flashCSS.animation = `fadeOut linear ${flashDelay}s 2s forwards`;
 
     setTimeout(() => {
-      flashCSS.animation = 'fadeOut linear 5s 2s forwards';
-    });
+      welcomeCSS.display = 'none';
+      homepageCSS.display = 'block';
+    }, 2000 );
+
+    setTimeout(() => {
+      flashCSS.display = 'none';
+    }, flashDelay * 1000);
   }
 }
