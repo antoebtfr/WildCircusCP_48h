@@ -1,6 +1,7 @@
 import { VariablesGlobales } from './variableGlobales';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { LeCirqueComponent } from './pages/le-cirque/le-cirque.component';
 import { ShowsComponent } from './pages/shows/shows.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,13 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     LeCirqueComponent,
     ShowsComponent,
     ProfileComponent,
-    SidebarComponent
+    SidebarComponent,
+    SignUpFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [VariablesGlobales],
   bootstrap: [AppComponent]

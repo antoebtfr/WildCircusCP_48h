@@ -1,0 +1,16 @@
+<form [formGroup]="signUpForm">
+    <div>
+        <label> Nom et Prénom </label>
+        <input type="texte" formControlName="nickname">
+    </div>
+    <div>
+        <label> Email </label>
+        <input type="email" formControlName="email">
+    </div>
+    <div>
+        <label> Mot de passe </label>
+        <input type="password" formControlName="password">
+    </div>
+
+    <button type="submit" (click)="onSumbit()"> Envoyer </button> 
+</form>

@@ -1,0 +1,48 @@
+form {
+  width: 45vw;
+  height: 55vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+form div {
+  margin: 3vh 0;
+}
+
+form div input {
+  width: 44vw;
+  border-radius: 20px;
+  background-color: #0000003d;
+  border: solid #0000003d 2px;
+  height: 3vh;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+
+form div label {
+  width: 44vw;
+  text-align: center;
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 2vh;
+}
+
+form button {
+  border-radius: 20px;
+  background-color: #0000003d;
+  border: solid #0000003d 2px;
+  height: 5vh;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  transition: 0.8s;
+}
+
+form button:hover {
+  transform: scale(1.2);
+  background-color: #fff;
+  color: black;
+  border: none; 
+}

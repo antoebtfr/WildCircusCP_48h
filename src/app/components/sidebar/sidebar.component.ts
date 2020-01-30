@@ -10,7 +10,9 @@ export class SidebarComponent implements OnInit {
 
   constructor(public varGlo: VariablesGlobales) { }
 
+
+
   ngOnInit() {
-  }
+}
 
 }
