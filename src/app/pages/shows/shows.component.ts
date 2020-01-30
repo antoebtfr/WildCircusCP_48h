@@ -1,3 +1,4 @@
+import { ShowService } from './../../shared/serv/show.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowsComponent implements OnInit {
 
-  constructor() { }
+  public freeShows = [];
+  public premiumShows = [];
+  constructor(private service: ShowService) { }
 
   ngOnInit() {
+    this.service.getFreeShows().subscribe( data => this.freeShows = data);
+    this.service.getPremiumShows().subscribe( data => this.premiumShows = data);
   }
 
 }

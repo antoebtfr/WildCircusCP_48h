@@ -2,6 +2,7 @@ import { VariablesGlobales } from './variableGlobales';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { ShowsComponent } from './pages/shows/shows.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.component';
+
+import { ShowService } from './shared/serv/show.service';
 
 @NgModule({
   declarations: [
@@ -31,9 +34,10 @@ import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [VariablesGlobales],
+  providers: [VariablesGlobales, ShowService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
