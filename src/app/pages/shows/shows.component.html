@@ -6,8 +6,10 @@
         <h2> Free Shows </h2>
         <div id="free-shows-list" class="shows-list">
             <div *ngFor="let freeShow of freeShows" class="show">
-                <div class="show-image"></div>
-            <div class="show-details"> <p> {{freeShow.name}}  - {{freeShow.freePlace}} / {{freeShow.nbPlace}} </p> </div>
+                <div class="show-image" style.background-image="url({{freeShow.img}})"></div>
+                <div class="show-details">
+                    <p> {{freeShow.name}} - {{freeShow.freePlace}} / {{freeShow.nbPlace}} </p>
+                </div>
             </div>
         </div>
     </section>
@@ -15,8 +17,10 @@
         <h2> Premium shows </h2>
         <div id="premium-shows-list" class="shows-list">
             <div *ngFor="let premShow of premiumShows" class="show">
-                <div class="show-image"></div>
-          <div class="show-details"> <p> {{premShow.name}}  - {{premShow.freePlace}} / {{premShow.nbPlace}}</p> </div>
+                <div class="show-image" style.background-image="url({{premShow.img}})"></div>
+                <div class="show-details">
+                    <p> {{premShow.name}} - {{premShow.freePlace}} / {{premShow.nbPlace}}</p>
+                </div>
             </div>
         </div>
     </section>

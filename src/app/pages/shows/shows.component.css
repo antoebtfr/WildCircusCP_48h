@@ -6,13 +6,15 @@ app-navbar {
 
 #shows-body {
   height: 100vh;
-  background-color: red;
+  backdrop-filter: blur(0.8); 
+  background-image: url(https://www.zoorigin.com/media/thumbnail/article_cover/media/images/xle-cirque-et-les-animaux-une-question-qui-fait-debat-3.jpg.pagespeed.ic.8Tr2rGI_kr.jpg);
+  background-size: cover;
+  background-position: center;
   overflow: auto;
 }
 
 .shows-container {
   width: 100vw;
-  background-color: grey;
   margin-top: 10vh;
 }
 
@@ -23,7 +25,6 @@ app-navbar {
 
 .shows-list {
   margin-top: 20px; 
-  background-color: blue;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -31,15 +32,15 @@ app-navbar {
 }
 
 .show {
-  background-color: black;
   height: 35vh;
   width: 20vw;
-  border-radius: 10px;
+  border: solid 5px white; 
 }
 
 .show-image {
-  background-color: lightyellow;
   height: 80%;
+  background-position: center;
+  background-size: cover;
 }
 
 
