@@ -17,6 +17,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.component';
 
 import { ShowService } from './shared/serv/show.service';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ShowService } from './shared/serv/show.service';
     ShowsComponent,
     ProfileComponent,
     SidebarComponent,
-    SignUpFormComponent
+    SignUpFormComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,7 @@ import { ShowService } from './shared/serv/show.service';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [VariablesGlobales, ShowService],
+  providers: [VariablesGlobales, ShowService, ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

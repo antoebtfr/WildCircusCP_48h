@@ -6,19 +6,23 @@ app-navbar {
 
 #profil-body {
   height: 100vh;
-  background-color: red;
+  background-image: url(https://i.pinimg.com/564x/df/0a/ea/df0aead34ac7367eba75c0d9998133bf.jpg);
 }
 
 #profil-background {
   width: 100vw;
   height: 30vh;
-  background-color: black;
+  background-image: url(https://i.pinimg.com/564x/48/a2/6c/48a26c030180a205cd11318a9f8c7142.jpg);
+  background-size: cover;
+  background-position: 10px -350px;
   position: fixed;
   top: 0;
 }
 
 #profil-avatar {
-  background-color: yellow;
+  background-image: url(https://i.pinimg.com/564x/48/a2/6c/48a26c030180a205cd11318a9f8c7142.jpg);
+  background-position: center;
+  background-size: cover;
   height: 175%;
   width: 22.5%;
   border: solid white 5px;
@@ -48,7 +52,7 @@ app-navbar {
 }
 
 #profil-show {
-  background-color: blue;
+  background-color: rgba(51, 19, 19, 0.678);
   height: 60vh;
   width: 65vw;
   position: fixed;
@@ -65,7 +69,7 @@ app-navbar {
   letter-spacing: 0.7em;
 }
 #myShows {
-  background-color: green;
+  background-color: rgba(8, 8, 8, 0.5);
   width: 95%;
   height: 80%;
   overflow: auto;
