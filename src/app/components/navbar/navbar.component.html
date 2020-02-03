@@ -2,7 +2,7 @@
     <i class="material-icons" (click)="varGlo.openSide()"> face </i>
     <ul>
         <li *ngFor="let navlink of navLinks" class="navlink" [routerLink]="navlink.link"
-            [style.background-color]="navlink.background">
+            style.background-image="url({{navlink.background}})">
             {{navlink.name}}
         </li>
     </ul>

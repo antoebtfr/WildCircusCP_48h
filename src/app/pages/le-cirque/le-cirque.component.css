@@ -5,7 +5,9 @@ app-navbar {
 }
 #le-cirque-body {
   height: 100vh;
-  background-color: red;
+  background-image: url(https://www.telerama.fr/sites/tr_master/files/styles/simplecrop1000/public/0_dr-ag37_0.jpg?itok=2JxTbVVv&sc=8d469251f6ff096ca7bd6786dea9f6a3);
+  background-size: cover;
+  background-position: center; 
 }
 
 #le-cirque {
@@ -16,9 +18,15 @@ app-navbar {
 #le-cirque h2 {
   text-align: center;
   font-size: 5em;
+  font-family: 'Playball', cursive;
 }
 
 #le-cirque-detail{
   text-align: center;
   margin-top: 10vh; 
+  padding: 0 7vw;
+}
+
+#le-cirque-detail p{
+  margin-bottom: 3vh;
 }

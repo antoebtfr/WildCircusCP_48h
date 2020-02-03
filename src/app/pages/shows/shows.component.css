@@ -4,6 +4,9 @@ app-navbar {
   width: 100vw;
 }
 
+section h2{
+  background-color: rgba(0, 0, 0, 0.431);
+}
 #shows-body {
   height: 100vh;
   backdrop-filter: blur(0.8); 
@@ -34,7 +37,15 @@ app-navbar {
 .show {
   height: 35vh;
   width: 20vw;
-  border: solid 5px white; 
+  border: solid 5px white;
+  transition: 0.4s ease-in-out; 
+  cursor: pointer;
+}
+
+.show:hover{
+  height: 38vh;
+  width: 23vw;
+  box-shadow: 10px 10px 50px black; 
 }
 
 .show-image {
@@ -46,7 +57,7 @@ app-navbar {
 
 .show-details{
   height: 20%;
-  background-color: green;
+  background-color: rgba(0, 0, 0, 0.842);
   display: flex;
   align-items: center;
   justify-content: center;

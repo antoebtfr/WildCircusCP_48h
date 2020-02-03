@@ -21,6 +21,8 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  background-position: center;
 }
 nav ul li:hover {
   font-size: 2em;
