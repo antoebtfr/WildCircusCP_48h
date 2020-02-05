@@ -17,7 +17,7 @@
     </ul>
     <!-- Affiche la catégorie sélecionnée -->
     <div id="users-list" class="entity-list" *ngIf="selectedCategorie === 'user' ">
-        <div *ngFor='let user of listOfUsers'> {{user}} </div>
+        <div *ngFor='let user of listOfUsers'> {{user.name}} </div>
     </div>
     <div id="shows-list" class="entity-list" *ngIf="selectedCategorie === 'shows' ">
         <div *ngFor='let show of listOfShows'>{{show}}</div>

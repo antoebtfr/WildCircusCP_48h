@@ -1,3 +1,4 @@
+import { UserService } from './../../shared/serv/user.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,13 +10,14 @@ export class AdminPageComponent implements OnInit {
 
   public categories = ['user', 'shows'];
   public selectedCategorie = '';
-  public listOfUsers = ['Salut', 'user'];
-  public listOfShows = ['Salut je suis', 'le show'];
+  public listOfUsers = [];
+  public listOfShows = [];
   public onModify = false; // Toggle les boutons de mofication de profil + déverouille les input si true
 
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
+    this.userService.getAllUsers().subscribe(data => this.listOfUsers = data);
   }
 
   public selectCate(categorie: string) {
