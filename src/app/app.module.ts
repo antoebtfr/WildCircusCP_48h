@@ -21,6 +21,7 @@ import { LoginFormComponent } from './components/login-form/login-form.component
 import { AdminPageComponent } from './pages/admin-page/admin-page.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { ShowListComponent } from './components/show-list/show-list.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ShowListComponent } from './components/show-list/show-list.component';
     LoginFormComponent,
     AdminPageComponent,
     UserListComponent,
-    ShowListComponent
+    ShowListComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,

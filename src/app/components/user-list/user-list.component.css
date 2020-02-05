@@ -6,15 +6,16 @@
   overflow-x: hidden;
 }
 
-.user-detail {
+.user-details {
   margin-bottom: 3vh;
   flex-flow: row nowrap;
   background-color: rgba(24, 5, 2, 0.664);
   height: 5vh;
   justify-content: space-around;
+  cursor: pointer;
 }
 
-.user-detail,
+.user-details,
 .user-name,
 user-mail {
   display: flex;

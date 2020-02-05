@@ -9,8 +9,8 @@ export class AdminPageComponent implements OnInit {
 
   public categories = ['user', 'shows'];
   public selectedCategory = '';
-  public listOfShows = [];
   public onModify = false; // Toggle les boutons de mofication de profil + déverouille les input si true
+  public userDetailsOpen = true;
 
   constructor() { }
 

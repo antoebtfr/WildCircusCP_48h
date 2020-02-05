@@ -25,3 +25,5 @@
 <button class="edit-btn" *ngIf="onModify" (click)="endOnModify()"> Sauvegarder les modifications </button>
 <button class="edit-btn" *ngIf="onModify" (click)="endOnModify()"> Annuler </button>
 </div>
+
+<app-user-details *ngIf="userDetailsOpen"></app-user-details>
