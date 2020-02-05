@@ -1,0 +1,97 @@
+app-navbar {
+  position: fixed;
+}
+
+#admin-body {
+  background-color: red;
+  height: 100vh;
+}
+
+#admin-div {
+  padding-top: 6vh;
+  height: 40vh;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+#profil-img {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 15vw;
+  width: 15vw;
+  border: solid 2px white;
+}
+
+#profil-details {
+  height: 100%;
+  width: 33.3vw;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#profil-name {
+  margin-top: 2vh;
+}
+
+#profil-role {
+  height: 100%;
+  width: 33.3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#profil-date {
+  width: 33.3vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  height: 6vh;
+  font-size: 2em;
+}
+
+ul li {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.entity-list {
+  width: 100vw;
+  height: 46vh;
+  background-color: rgba(63, 19, 19, 0.815);
+  margin-top: 2vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.edit-btn {
+  background-color: rgba(46, 10, 10, 0.781);
+  color: white;
+  border-radius: 15px;
+  font-size: 1.2em;
+  padding: 0 2vw;
+  cursor: pointer;
+  margin-left: 2vw; 
+}
+
+#modify-btn,
+.edit-div {
+  position: fixed;
+  top: 7vh;
+  right: 4vw;
+}

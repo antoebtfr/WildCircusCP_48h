@@ -13,7 +13,8 @@ section h2{
   background-image: url(https://www.zoorigin.com/media/thumbnail/article_cover/media/images/xle-cirque-et-les-animaux-une-question-qui-fait-debat-3.jpg.pagespeed.ic.8Tr2rGI_kr.jpg);
   background-size: cover;
   background-position: center;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .shows-container {

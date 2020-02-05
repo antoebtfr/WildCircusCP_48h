@@ -1,0 +1,31 @@
+<section id='admin-body'>
+    <app-navbar></app-navbar>
+    <!-- Section contenant les informations du profil -->
+    <section id="admin-div">
+        <div id="profil-date" class="admin-sections"> Date d'inscription : 12/01/2000 </div>
+        <!-- needfix: Dynamique -->
+        <div id="profil-details" class="admin-sections">
+            <div id="profil-img"> </div>
+            <!-- needfix: Ajouter une étoile en haut à droite -->
+            <div id="profil-name"> Jean-Mivrijvrjzovzoprjvzvopjrv </div>
+        </div>
+        <div id="profil-role" class="admin-sections"> ADMIN </div> <!-- needfix: Ajouter membre role -->
+    </section>
+    <!-- Liste des différentes catégories -->
+    <ul>
+        <li *ngFor='let cate of categories' (click)='selectCate(cate)'> {{cate | uppercase}}</li>
+    </ul>
+    <!-- Affiche la catégorie sélecionnée -->
+    <div id="users-list" class="entity-list" *ngIf="selectedCategorie === 'user' ">
+        <div *ngFor='let user of listOfUsers'> {{user}} </div>
+    </div>
+    <div id="shows-list" class="entity-list" *ngIf="selectedCategorie === 'shows' ">
+        <div *ngFor='let show of listOfShows'>{{show}}</div>
+    </div>
+</section>
+
+<button class="edit-btn" id="modify-btn" *ngIf='!onModify' (click)="startOnModify()"> Modifier </button>
+<div class="edit-div">
+<button class="edit-btn" *ngIf="onModify" (click)="endOnModify()"> Sauvegarder les modifications </button>
+<button class="edit-btn" *ngIf="onModify" (click)="endOnModify()"> Annuler </button>
+</div>

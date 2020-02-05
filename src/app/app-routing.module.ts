@@ -6,6 +6,7 @@ import { LoadingComponent } from './pages/loading/loading.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ShowsComponent } from './pages/shows/shows.component';
+import { AdminPageComponent } from './pages/admin-page/admin-page.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,7 @@ const routes: Routes = [
   {path: 'shows', component: ShowsComponent},
   {path: 'profil', component: ProfileComponent},
   {path: 'homepage', component: HomepageComponent},
-  {path: 'in-work', component: HomepageComponent}
+  {path: 'in-work', component: AdminPageComponent}
 ];
 
 @NgModule({
