@@ -81,3 +81,14 @@
   margin-top: 2vh;
   font-size: 1.3em;
 }
+
+#delete-user-btn{
+  background-color: transparent;
+  border: solid 2px white;
+  color: white;
+  border-radius: 15px; 
+}
+
+#delete-user-btn:hover{
+  background-color: red;
+}

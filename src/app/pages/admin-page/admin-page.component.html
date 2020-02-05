@@ -26,4 +26,4 @@
 <button class="edit-btn" *ngIf="onModify" (click)="endOnModify()"> Annuler </button>
 </div>
 
-<app-user-details *ngIf="conf.userDetailsModal"></app-user-details>
+<app-user-details *ngIf="conf.getUserDetailsModalStatus()"></app-user-details>
