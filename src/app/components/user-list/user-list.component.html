@@ -1,5 +1,5 @@
 <section id="user-list-body">
-    <section *ngFor='let user of listOfUsers' class="user-details">
+    <section *ngFor='let user of listOfUsers' class="user-details" (click)="OpenModal()">
         <div class="user-name"> {{user.name}} </div>
         <div class="user-mail"> {{user.email}} </div>
         <div class="user-isPremium"> {{user.isPremium}} </div>

@@ -1,3 +1,4 @@
+import { VariablesGlobales } from './../../variableGlobales';
 import { UserService } from './../../shared/serv/user.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserListComponent implements OnInit {
 
-  public listOfUsers = [];
+  constructor(private userService: UserService, public conf: VariablesGlobales) { }
 
-  constructor(private userService: UserService) { }
+  public listOfUsers = [];
 
   ngOnInit() {
     this.userService.getAllUsers().subscribe(data => this.listOfUsers = data);
@@ -19,4 +20,9 @@ export class UserListComponent implements OnInit {
   public deleteUser(userId) {
     console.log(userId);
   }
+
+  public OpenModal() {
+     this.conf.openUserDetails();
+  }
+
 }

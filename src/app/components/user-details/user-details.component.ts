@@ -1,3 +1,4 @@
+import { VariablesGlobales } from './../../variableGlobales';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private conf: VariablesGlobales) { }
 
   ngOnInit() {
+  }
+
+  public closeDetails() {
+    this.conf.closeUserDetails();
   }
 
 }

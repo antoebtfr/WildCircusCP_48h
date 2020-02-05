@@ -20,10 +20,10 @@
     <app-show-list *ngIf="selectedCategory === 'shows' " ></app-show-list>
 </section>
 
-<button class="edit-btn" id="modify-btn" *ngIf='!onModify' (click)="startOnModify()"> Modifier </button>
+<button class="edit-btn" id="modify-btn" *ngIf='!onModify' (click)="startModification()"> Modifier </button>
 <div class="edit-div">
 <button class="edit-btn" *ngIf="onModify" (click)="endOnModify()"> Sauvegarder les modifications </button>
 <button class="edit-btn" *ngIf="onModify" (click)="endOnModify()"> Annuler </button>
 </div>
 
-<app-user-details *ngIf="userDetailsOpen"></app-user-details>
+<app-user-details *ngIf="conf.userDetailsModal"></app-user-details>
