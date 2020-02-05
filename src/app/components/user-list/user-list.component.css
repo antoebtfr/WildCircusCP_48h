@@ -1,0 +1,30 @@
+#user-list-body {
+  width: 100vw;
+  height: 46vh;
+  margin-top: 2vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.user-detail {
+  margin-bottom: 3vh;
+  flex-flow: row nowrap;
+  background-color: rgba(24, 5, 2, 0.664);
+  height: 5vh;
+  justify-content: space-around;
+}
+
+.user-detail,
+.user-name,
+user-mail {
+  display: flex;
+  align-items: center;
+}
+
+#isActived {
+  color: green;
+}
+
+#isNotActived {
+  color: red;
+}

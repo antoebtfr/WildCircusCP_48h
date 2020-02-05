@@ -1,0 +1,12 @@
+<section id="user-list-body">
+    <section *ngFor='let user of listOfUsers' class="user-detail">
+        <div class="user-name"> {{user.name}} </div>
+        <div class="user-mail"> {{user.email}} </div>
+        <div class="user-isPremium"> {{user.isPremium}} </div>
+        <div class="isActive?">
+            <div *ngIf="user.actived" id="isActived"> › Actived </div>
+            <div *ngIf="!user.actived" id="isNotActived"> › Not actived </div>
+        </div>
+        <button (click)="deleteUser(user.id)"> Delete </button>
+    </section>
+</section>

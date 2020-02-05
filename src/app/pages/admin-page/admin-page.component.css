@@ -70,14 +70,6 @@ ul li {
   cursor: pointer;
 }
 
-.entity-list {
-  width: 100vw;
-  height: 46vh;
-  background-color: rgba(63, 19, 19, 0.815);
-  margin-top: 2vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
 
 .edit-btn {
   background-color: rgba(46, 10, 10, 0.781);
@@ -94,4 +86,10 @@ ul li {
   position: fixed;
   top: 7vh;
   right: 4vw;
+}
+
+.selected{
+    font-size: 1.4em;
+    text-shadow: 4px 4px 10px black;
+    transition: 0.3s; 
 }

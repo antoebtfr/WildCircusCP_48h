@@ -19,6 +19,8 @@ import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.comp
 import { ShowService } from './shared/serv/show.service';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { AdminPageComponent } from './pages/admin-page/admin-page.component';
+import { UserListComponent } from './components/user-list/user-list.component';
+import { ShowListComponent } from './components/show-list/show-list.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { AdminPageComponent } from './pages/admin-page/admin-page.component';
     SidebarComponent,
     SignUpFormComponent,
     LoginFormComponent,
-    AdminPageComponent
+    AdminPageComponent,
+    UserListComponent,
+    ShowListComponent
   ],
   imports: [
     BrowserModule,

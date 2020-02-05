@@ -10,21 +10,20 @@ export class ShowService {
 
   constructor(private http: HttpClient) { }
 
-  static GET_ALL_URL = '';
-  static GET_FREE_URL = 'free/';
-  static GET_PREMIUM_URL = 'premium/';
+  static GET_FREE_URL = '/free';
+  static GET_PREMIUM_URL = '/premium';
 
-  private host = 'http://localhost:3000/shows/';
+  static HOST = 'http://localhost:3000/shows';
 
   getShows(): Observable<Show[]> {
-    return this.http.get<Show[]>(this.host + ShowService.GET_ALL_URL);
+    return this.http.get<Show[]>(ShowService.HOST);
   }
 
   getFreeShows(): Observable<Show[]> {
-    return this.http.get<Show[]>(this.host + ShowService.GET_FREE_URL);
+    return this.http.get<Show[]>(ShowService.HOST + ShowService.GET_FREE_URL);
   }
 
   getPremiumShows(): Observable<Show[]> {
-    return this.http.get<Show[]>(this.host + ShowService.GET_PREMIUM_URL);
+    return this.http.get<Show[]>(ShowService.HOST + ShowService.GET_PREMIUM_URL);
   }
 }

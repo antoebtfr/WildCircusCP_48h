@@ -13,15 +13,11 @@
     </section>
     <!-- Liste des différentes catégories -->
     <ul>
-        <li *ngFor='let cate of categories' (click)='selectCate(cate)'> {{cate | uppercase}}</li>
+        <li *ngFor='let cate of categories' (click)='selectCate(cate)' [ngClass]=" selectedCategory === cate ? 'selected': '' "> {{cate | uppercase}}</li>
     </ul>
     <!-- Affiche la catégorie sélecionnée -->
-    <div id="users-list" class="entity-list" *ngIf="selectedCategorie === 'user' ">
-        <div *ngFor='let user of listOfUsers'> {{user.name}} </div>
-    </div>
-    <div id="shows-list" class="entity-list" *ngIf="selectedCategorie === 'shows' ">
-        <div *ngFor='let show of listOfShows'>{{show}}</div>
-    </div>
+    <app-user-list *ngIf='selectedCategory === "user" ' ></app-user-list>
+    <app-show-list *ngIf="selectedCategory === 'shows' " ></app-show-list>
 </section>
 
 <button class="edit-btn" id="modify-btn" *ngIf='!onModify' (click)="startOnModify()"> Modifier </button>
