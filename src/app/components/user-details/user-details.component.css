@@ -1,7 +1,7 @@
 #user-details-body {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.91);
+  background-color: rgba(0, 0, 0, 0.81);
   position: fixed;
   top: 0;
   left: 0;
@@ -13,28 +13,33 @@
 #user-details {
   width: 90vw;
   height: 90vh;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(16, 31, 41);
   display: flex;
+  box-shadow: 5px 5px 10px black;
 }
 
 #profil-photo {
   border-radius: 50%;
   width: 40vh;
   height: 40vh;
-  background-color: red;
   border: white solid 0.5vh;
+  background-image: url(https://i.pinimg.com/564x/48/a2/6c/48a26c030180a205cd11318a9f8c7142.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .user-leftside {
-  background-color: green;
   height: 100%;
-  width: 41.5vh;
+  width: 55.5vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: #080808d9;
 }
 
 .user-rightside {
-  background-color: blue;
   height: 100%;
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,7 +58,6 @@
 
 .user-bot-leftside {
   height: 49vh;
-  background-color: grey;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,9 +65,8 @@
 }
 
 .inner-user-rightside {
-  background-color: rgb(11, 43, 70);
   height: 80%;
-  width: 80%;
+  width: 95%;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
@@ -72,9 +75,8 @@
 
 .inner-user-rightside .bottom {
   width: 100%;
-  background-color: red;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .bold {
@@ -82,13 +84,26 @@
   font-size: 1.3em;
 }
 
-#delete-user-btn{
+#delete-user-btn {
   background-color: transparent;
   border: solid 2px white;
   color: white;
-  border-radius: 15px; 
+  border-radius: 15px;
+  transition: 0.4s;
+  font-size: 0.7em;
+  transition: 0.6s;
+  padding: 1vh 2vh;
+  cursor: pointer;
 }
 
-#delete-user-btn:hover{
-  background-color: red;
+#delete-user-btn:hover {
+  background-color:rgb(83, 23, 23);
+}
+
+#isActived {
+  color: green;
+}
+
+#isNotActived {
+  color: red;
 }

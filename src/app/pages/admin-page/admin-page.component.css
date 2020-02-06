@@ -3,14 +3,18 @@ app-navbar {
 }
 
 #admin-body {
-  background-color: red;
+  background-position: center;
+  background-size: cover;
+  background-color: #311212;
   height: 100vh;
 }
 
 #admin-div {
   padding-top: 6vh;
   height: 40vh;
-  background-color: blue;
+  background-image: url(https://www.krakatoa.org/wp-content/uploads/2015/09/colorful-triangles-background_yB0qTG6-600x450.jpg);
+  background-position: center;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +22,9 @@ app-navbar {
 }
 
 #profil-img {
-  background-color: #fff;
+  background-image: url(https://i.pinimg.com/564x/48/a2/6c/48a26c030180a205cd11318a9f8c7142.jpg);
+  background-position: center;
+  background-size: cover;
   border-radius: 50%;
   height: 15vw;
   width: 15vw;
@@ -70,7 +76,6 @@ ul li {
   cursor: pointer;
 }
 
-
 .edit-btn {
   background-color: rgba(46, 10, 10, 0.781);
   color: white;
@@ -78,7 +83,7 @@ ul li {
   font-size: 1.2em;
   padding: 0 2vw;
   cursor: pointer;
-  margin-left: 2vw; 
+  margin-left: 2vw;
 }
 
 #modify-btn,
@@ -88,8 +93,8 @@ ul li {
   right: 4vw;
 }
 
-.selected{
-    font-size: 1.4em;
-    text-shadow: 4px 4px 10px black;
-    transition: 0.3s; 
+.selected {
+  font-size: 1.4em;
+  text-shadow: 4px 4px 10px black;
+  transition: 0.3s;
 }
